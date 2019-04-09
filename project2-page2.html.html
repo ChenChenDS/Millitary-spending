@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Data ming project ---- Chen Chen</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #2950D6;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: right;
+  width: 20%;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: disc;
+  padding:50px;
+}
+
+nav ul li a{ 
+  color:black;
+}
+
+article {
+  float: left;
+  width: 80%;
+  background-color: white;
+}
+
+#myDIV {
+  display:none;
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+  background-color: white;
+  margin-top: 0px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #4C6AD1;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Immigration data analysis</h2>
+</header>
+
+<section style = " 
+       clear:both;
+       background:#95A8E7;
+       padding:0;">
+  <nav>
+    <ul>
+      <li><a href="project2_page1.html">Home page</a></li>
+      <br /><br />
+      <li><a href="project2-page2.html">Overview of world immigration</a></li>
+      <br /><br />
+      <li><a href="project2-page3.html">Top Immigrantion countries overview</a></li>
+      <br /><br />
+      <li><a href="project2-page4.html">Top Immigrantion countries detail analysis</a></li>
+      <br /><br />
+      <li><a href="project2-page5.html">Refugee as part of the immigrant</a></li>
+      <br /><br />
+      <li><a href="project2-page6.html">Summary</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <H2>Overview of the world immigration</H2>
+    <br /><br />
+    <img src="image/immigrationtotal.png" alt="immigrationtotal" height="400" class="center">
+    <p>The bar plot shows the world total immigration increase steadily. </p>
+    <br /><br />
+    <button onclick="myFunction()">show code</button>
+
+    <div id="myDIV">
+    <img src="image/code1.png" alt="code1"height="500" class="center">
+    </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+    <img src="image/immigrant worldmap1990.png" alt="immigrant worldmap1990" height="400" class="center">
+    <img src="image/immigrant worldmap2017.png" alt="immigrant worldmap2017" height="400" class="center">
+    <p>From the map plots, we can see the immigration distribution does not change a lot, compared with the year 1990 and 2017. North America, Europe, the Middle East, and Australia are the top destinations during these 30 years. 
+    </p>
+    <br /><br />
+    <img src="image/migrant age.png" alt="migrant age"  class="center">
+    <p> This area graph shows the world immigrant distribution by age, it is not surprising that middle age immigration is the largest part. It's worth noting that the increase in immigrants aged over 70. This is because of the tendency to return to countries of origin after retiring.
+    </p>
+    <br /><br />
+    <br /><br />
+  </article>
+</section>
+
+<footer>
+  <p>GWU Data Science</p>
+  <p>Auther:ChenChen</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Data ming project ---- Chen Chen</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #2950D6;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: right;
+  width: 20%;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: disc;
+  padding:50px;
+}
+
+nav ul li a{ 
+  color:black;
+}
+
+article {
+  float: left;
+  width: 80%;
+  background-color: white;
+}
+
+#myDIV {
+  display:none;
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+  background-color: white;
+  margin-top: 0px;
+}
+
+#myDIV1 {
+  display:none;
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+  background-color: white;
+  margin-top: 0px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #4C6AD1;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Immigration data analysis</h2>
+</header>
+
+<section style = " 
+       clear:both;
+       background:#95A8E7;
+       padding:0;">
+  <nav>
+    <ul>
+      <li><a href="project2_page1.html">Home page</a></li>
+      <br /><br />
+      <li><a href="project2-page2.html">Overview of world immigration</a></li>
+      <br /><br />
+      <li><a href="project2-page3.html">Top Immigrantion countries overview</a></li>
+      <br /><br />
+      <li><a href="project2-page4.html">Top Immigrantion countries detail analysis</a></li>
+      <br /><br />
+      <li><a href="project2-page5.html">Refugee as part of the immigrant</a></li>
+      <br /><br />
+      <li><a href="project2-page6.html">Summary</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <H2>Top immigrant countries refugee analysis</H2>
+    <br /><br />
+    <button onclick="myFunction()">show code</button>
+
+    <div id="myDIV">
+    <img src="image/barlinechart.png" alt="barlinechart" height="300" class="center">
+    </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+    <img src="image/refugee-immigration.png" alt="refugee-immigration" height="480" class = "center">
+    <p>This plot shows the refugee as a percentage of immigrant and the immigrant as a percentage of total population. By comparing the year 1990 and 2017, we can see that the immigration-to-population ratio in United Arab Emirates is much higher than other countries. However, the refugee-to-immigration ratio is very low. By contrast, Germany¡¯s immigration-to-population ratio is not high, but the refugee-to-immigration ratio is very high. In 2017, the refugee-to-immigration ratio in France also reached a peak. 
+    </p> 
+    <br /><br /> 
+    <H2><center>World refugee stock (including asylum seekers) analysis</center></H2>
+    <img src="image/refugee stock.png" alt="refugee stock"  class = "center">
+    <p>When analyzing the refugee stock, we can see that Turkey, Jordan, and Palestine received many refugees, especially turkey, there is a dramatic increase from the year 2010 to 2015, this is because of their location. Germany and the United States are also in the top place, this is because they believed that refugees will fill the gap in the job market, which in turn benefits economic growth. 
+    </p>
+    <br /><br /> 
+    <H2>Correlation between countries immigration and refugee stock</H2>
+    <br /><br />
+    <button onclick="myFunction1()">show code</button>
+
+    <div id="myDIV1">
+    <img src="image/correlationcode.png" alt="correlationcode" height="250" class="center">
+    </div>
+
+    <script>
+     function myFunction1() {
+      var x = document.getElementById("myDIV1");
+      if (x.style.display == "none") {
+          x.style.display = "block";
+         } else {
+            x.style.display = "none";
+          }
+         }
+    </script>
+    <img src="image/correlation.png" alt="correlation"class = "center">
+    <p>Finally, I tried to find the relationship between refugee stock and immigrant stock. 
+The scatter plot shows that there appears to be a relationship between these two, implying that refugee is important in explaining population movement nowadays. </p>
+
+  </article>
+</section>
+
+<footer>
+  <p>GWU Data Science</p>
+  <p>Auther:ChenChen</p>
+</footer>
+
+</body>
+</html>
