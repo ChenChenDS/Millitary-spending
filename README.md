@@ -1,18 +1,14 @@
 # DATS6103-project1
-This is a data mining project. I use the world immigration data from United Nations to do the analyse. An overview is given at the first glance. And further detailed analysis for the top immigrant countries and the component is given. The comparison of the immigration and refugee is also discussed. Regarding to the mining result, I give some summary to the facts why people choose to move and why countries accept immigrate and refugee. 
+This is a data mining project. I use the world military spending data from Stockholm International Peace Research Institute (SIPRI) to do the analyse. An overview is given at the first glance. And further detailed analysis for the top military spending countries in the world, the fastest growing countries in military spending, and compare the military spending with GDP. Besides, a correlation and prediction is given. Regarding to the mining result, I give short summary. 
 
 ### Language
 python
 #### packages
  pandas<br> 
  numpy<br>
- plotly<br>
- plotly_express<br>
  matplotlib.pyplot<br>
- country_converter<br>
- import plotly<br>
  numpy.polynomial.polynomial<br>
- math<br>
+ 
 
 ### Files
  Excel<br>
