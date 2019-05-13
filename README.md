@@ -19,8 +19,8 @@ python
  ipynb<br>
  html<br>
 
-### Visualization link: 
-https://chenchends.github.io/Immigration-data-analysis/
+### PPT Visualization link: 
+https://chenchends.github.io/Millitary-spending/
 
 ### Instruction
 <li>Put the excel and python code in the same folder</li>
